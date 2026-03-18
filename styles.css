@@ -275,86 +275,32 @@ a:hover {
     }
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: fadeIn 1s ease-out 1.5s both;
+/* Hero Quote */
+.hero-quote {
+    margin-top: 40px;
+    padding: 30px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 3px solid var(--color-gold);
+    border-right: 3px solid var(--color-gold);
+    max-width: 600px;
+    animation: fadeIn 1s ease-out 1s both;
 }
 
-.mouse {
-    width: 26px;
-    height: 40px;
-    border: 2px solid var(--color-gold);
-    border-radius: 15px;
-    position: relative;
-}
-
-.wheel {
-    width: 4px;
-    height: 8px;
-    background: var(--color-gold);
-    border-radius: 2px;
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: scroll 2s infinite;
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(15px);
-    }
-}
-
-/* ============================================
-   TAGLINE SECTION
-   ============================================ */
-.tagline {
-    padding: 80px 20px;
-    background: var(--color-darker);
-    text-align: center;
-    position: relative;
-}
-
-.tagline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
-}
-
-.tagline blockquote {
+.quote-text {
     font-family: var(--font-body);
-    font-size: clamp(1.3rem, 3vw, 2rem);
     font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
     color: var(--color-cream);
-    max-width: 800px;
-    margin: 0 auto 20px;
-    position: relative;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.quote-mark {
-    color: var(--color-gold);
-    font-size: 1.5em;
-}
-
-.tagline-sub {
+.quote-tagline {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
-    letter-spacing: 0.3em;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    letter-spacing: 0.2em;
     color: var(--color-gold);
+    text-transform: uppercase;
 }
 
 /* ============================================
@@ -955,6 +901,22 @@ a:hover {
 
     .hero-subtitle {
         flex-wrap: wrap;
+    }
+
+    .hero-quote {
+        margin-top: 25px;
+        padding: 20px 25px;
+        max-width: 90%;
+    }
+
+    .quote-text {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .quote-tagline {
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
     }
 
     /* Reduce section padding on mobile */
