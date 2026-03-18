@@ -77,26 +77,6 @@ function initParallax() {
     });
 }
 
-// Hide/show form placeholder based on iframe load
-function handleFormLoad() {
-    const iframe = document.querySelector('.google-form');
-    const placeholder = document.getElementById('formPlaceholder');
-
-    if (iframe && placeholder) {
-        iframe.addEventListener('load', () => {
-            placeholder.style.display = 'none';
-        });
-
-        // If iframe src is placeholder, show the placeholder
-        if (iframe.src.includes('YOUR_GOOGLE_FORM')) {
-            iframe.style.display = 'none';
-            placeholder.innerHTML = `
-                <p style="font-size: 1.5rem; margin-bottom: 20px;">📝 RSVP Form Coming Soon</p>
-                <p>The RSVP form will be embedded here.</p>
-            `;
-        }
-    }
-}
 
 // Countdown timer (optional - if you want to add urgency)
 function initCountdown() {
@@ -112,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initSmoothScroll();
     initParallax();
-    handleFormLoad();
 });
 
 // Add loaded class to body for additional animations

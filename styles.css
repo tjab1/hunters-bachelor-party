@@ -701,17 +701,8 @@ a:hover {
 
 .google-form {
     display: block;
-    background: transparent;
-}
-
-.form-placeholder {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--color-gray);
-}
-
-.form-placeholder p {
-    margin-bottom: 15px;
+    background: var(--color-cream);
+    border-radius: 4px;
 }
 
 .form-note {
