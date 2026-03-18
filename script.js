@@ -38,7 +38,7 @@ function initScrollAnimations() {
 
     // Observe all animatable elements
     const animatableElements = document.querySelectorAll(
-        '.itinerary-item, .venue-card, .travel-card, .gallery-item'
+        '.activity-card, .venue-card, .travel-card, .gallery-item'
     );
 
     animatableElements.forEach((el) => {
