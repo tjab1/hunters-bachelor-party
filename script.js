@@ -80,8 +80,8 @@ function initParallax() {
 
 // Countdown timer (optional - if you want to add urgency)
 function initCountdown() {
-    const rsvpDeadline = new Date('2025-03-23T23:59:59').getTime();
-    const eventDate = new Date('2025-07-09T00:00:00').getTime();
+    const rsvpDeadline = new Date('2026-03-23T23:59:59').getTime();
+    const eventDate = new Date('2026-07-09T00:00:00').getTime();
 
     // You can add countdown display elements if desired
 }
