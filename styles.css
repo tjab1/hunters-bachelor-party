@@ -852,9 +852,21 @@ a:hover {
         padding: 25px 20px;
     }
 
-    /* Compact venue cards */
+    /* Venue cards - pyramid layout (2 top, 1 bottom centered) */
+    .venue-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
     .venue-card {
         padding: 20px 15px;
+    }
+
+    .venue-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 60%;
+        justify-self: center;
     }
 
     .venue-icon {
@@ -875,43 +887,45 @@ a:hover {
         font-size: 0.75rem;
     }
 
-    /* Compact travel cards */
+    /* Travel cards - side by side */
     .travel-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 
     .travel-card {
-        padding: 20px 15px;
+        padding: 20px 12px;
     }
 
     .travel-badge {
-        font-size: 0.65rem;
-        padding: 3px 12px;
+        font-size: 0.6rem;
+        padding: 3px 8px;
         top: -10px;
     }
 
     .travel-icon {
-        font-size: 1.4rem;
-        margin-bottom: 8px;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
     }
 
     .travel-card h3 {
-        font-size: 0.85rem;
-        margin-bottom: 5px;
+        font-size: 0.7rem;
+        margin-bottom: 4px;
     }
 
     .airport-code {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 3px;
     }
 
     .travel-time {
-        font-size: 0.85rem;
-        margin-bottom: 5px;
+        font-size: 0.75rem;
+        margin-bottom: 4px;
     }
 
     .travel-note {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     .travel-tip {
